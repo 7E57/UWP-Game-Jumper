@@ -1,10 +1,9 @@
-local ScreenGui = Instance.new("ScreenGui")
+local ScreenGui = Instance.new("ScreenGui", game.CoreGui)
 local Frame = Instance.new("Frame")
 local TextBox = Instance.new("TextBox")
 local ImageButton = Instance.new("ImageButton")
 local TextButton = Instance.new("TextButton")
 
-ScreenGui.Parent = gethui()
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Frame.Parent = ScreenGui
