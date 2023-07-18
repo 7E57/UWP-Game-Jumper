@@ -1,10 +1,13 @@
 //Join Roblox from Website - All Browsers Supported
-let path = window.location.pathname;
-
-if (path.startsWith("/")) {
-  path = path.substr(1);
+if (window.location.href.startsWith("https://www.roblox.com/games/")) {
+  let path = window.location.pathname;
+  
+  if (path.startsWith("/")) {
+    path = path.substr(1);
+  }
+  
+  let pathSegments = path.split("/");
+  let gameID = pathSegments[1];
+  
+  window.open(`roblox://placeID=${gameID}`, "_self");
 }
-
-let pathSegments = path.split("/");
-let gameID= pathSegments[1];
-window.open(`roblox://placeID=${gameID}`, `_self`)
