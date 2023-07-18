@@ -1,4 +1,4 @@
-//Join Roblox from Website - All Browsers Supported
+//Join Roblox from Website - All Browsers Supported (This does not work for VIP or Specific Servers)
 if (window.location.href.startsWith("https://www.roblox.com/games/")) {
   let path = window.location.pathname;
   
